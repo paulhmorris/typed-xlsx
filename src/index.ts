@@ -1,5 +1,6 @@
 /* eslint-disable ts/ban-types */
-import XLSX, { type WorkSheet, utils } from 'xlsx-js-style'
+import XLSX, { type WorkSheet } from 'xlsx-js-style'
+const { utils } = XLSX;
 import type { CellValue, Column, ColumnGroup, ExcelBuildOutput, ExcelBuildParams, ExcelSchema, FormatterPreset, FormattersMap, GenericObject, NestedPaths, Not, SchemaColumnKeys, SheetConfig, SheetParams, SheetTable, SheetTableBuilder, TOutputType, TransformersMap } from './types'
 import { SheetCacheManager, applyGroupBorders, buildSheetConfig, createCell, getColumnHeaderStyle, getColumnSeparatorIndexes, getWorksheetColumnWidths, tableHasSummary } from './utils'
 
